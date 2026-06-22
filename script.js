@@ -73,9 +73,9 @@ function formatInviteeName(value) {
 function getInviteeFromUrl() {
   const queryName = new URLSearchParams(window.location.search).get("name");
 
-  if (queryName) {
-    return formatInviteeName(queryName);
-  }
+if (queryName) {
+  return formatInviteeName(decodeURIComponent(queryName));
+}
 
   const hashParts = window.location.hash.replace(/^#\/?/, "").split("/");
   const hashName = hashParts[0] === "invitation" ? hashParts[1] : hashParts[0];
