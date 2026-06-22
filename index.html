@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcome-title">
+      <p class="eyebrow">OASIS Toastmasters Club</p>
+      <h1 id="welcome-title">Awaits</h1>
+      <p class="invitee-line">For <span id="welcomeInvitee">our honored guest</span></p>
+      <p class="intro-text">Tap the traditional doorway to open your invitation.</p>
+      <button class="door-link" type="button" id="openInvitation" aria-label="Open invitation">
+        <span class="door-roof" aria-hidden="true"></span>
+        <span class="door-frame" aria-hidden="true">
+          <span class="door-panel left">
+            <span class="door-carving"></span>
+            <span class="door-handle"></span>
+          </span>
+          <span class="door-panel right">
+            <span class="door-carving"></span>
+            <span class="door-handle"></span>
+          </span>
+        </span>
+        <span class="door-caption">Open invitation</span>
+      </button>
+    </section>
+
+    <section class="invitation-wrap" id="invitation" aria-label="Invitation card">
+      <article class="card" id="card">
+        <div class="card-front">
+          <div class="front-pattern" aria-hidden="true"></div>
+          <div class="seal">Open</div>
+        </div>
+
+        <div class="card-inside">
+          <div class="ornament top" aria-hidden="true"></div>
+          <p class="script-text">Join Us</p>
+          <h2>TO CELEBRATE THE HERITAGE IN HARMONY</h2>
+          <p class="invitee-card">Cordially Inviting <span id="cardInvitee">Guest</span>,</p>
+          <p class="scroll-hint">Scroll down for details and RSVP</p>
+          <p class="names" id="eventName">Sachithra's Party</p>
+
+          <div class="details">
+            <p><span>Date</span> <span id="eventDate">Saturday, 25 July 2026</span></p>
+            <p><span>Time</span> <span id="eventTime">6:30 PM onwards</span></p>
+            <p>
+              <span>Venue</span>
+              <a class="map-link" id="eventVenue" href="#" target="_blank" rel="noopener">
+                Hotel Chance Palace, Kottala, Veyangoda
+              </a>
+            </p>
+          </div>
+
+          <p class="message" id="eventMessage">
+            Your presence will make the evening brighter. Come ready for food,
+            music, laughter, and memories.
+          </p>
+
+          <div class="rsvp-actions" aria-label="RSVP response">
+            <button class="rsvp-button accept" type="button" id="acceptInvitation">Accept</button>
+            <button class="rsvp-button decline" type="button" id="declineInvitation">Decline</button>
+          </div>
+
+          <button class="close-button" type="button" id="closeInvitation">Close card</button>
+          <div class="ornament bottom" aria-hidden="true"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
