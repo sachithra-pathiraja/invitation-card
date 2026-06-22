@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for invitation-card-gorj-g on 2026-06-22T12:37:01Z
+# fly.toml app configuration file generated for invitation-card-9-eoew on 2026-06-22T13:40:47Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'invitation-card-gorj-g'
-primary_region = 'sin'
+app = 'invitation-card-9-eoew'
+primary_region = 'ams'
 
 [build]
 
