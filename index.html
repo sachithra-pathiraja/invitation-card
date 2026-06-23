@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitation Card</title>
+  <title>OASIS Toastmasters Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,22 +13,25 @@
   <main class="page-shell">
     <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcome-title">
       <p class="eyebrow">OASIS Toastmasters Club</p>
-      <h1 id="welcome-title">Awaits</h1>
+      <h1 id="welcome-title">Heritage in Harmony</h1>
       <p class="invitee-line">For <span id="welcomeInvitee">our honored guest</span></p>
-      <p class="intro-text">Tap the traditional doorway to open your invitation.</p>
+      <p class="intro-text">We would be delighted to celebrate this special day with you.</p>
       <button class="door-link" type="button" id="openInvitation" aria-label="Open invitation">
-        <span class="door-roof" aria-hidden="true"></span>
-        <span class="door-frame" aria-hidden="true">
-          <span class="door-panel left">
-            <span class="door-carving"></span>
-            <span class="door-handle"></span>
-          </span>
-          <span class="door-panel right">
-            <span class="door-carving"></span>
-            <span class="door-handle"></span>
+        <span class="legacy-preview" aria-hidden="true">
+          <span class="legacy-year">17th</span>
+          <span class="legacy-title">Installation</span>
+          <span class="legacy-lines">
+            <span></span>
+            <span></span>
+            <span></span>
           </span>
         </span>
-        <span class="door-caption">Open invitation</span>
+        <span class="open-message">Open the legacy doors</span>
+        <span class="modern-door" aria-hidden="true">
+          <span class="door-slab left"></span>
+          <span class="door-slab right"></span>
+          <span class="door-glow"></span>
+        </span>
       </button>
     </section>
 
@@ -36,16 +39,21 @@
       <article class="card" id="card">
         <div class="card-front">
           <div class="front-pattern" aria-hidden="true"></div>
-          <div class="seal">Open</div>
+          <div class="seal">
+            <span>OASIS</span>
+            <strong>17</strong>
+          </div>
         </div>
 
         <div class="card-inside">
-          <div class="ornament top" aria-hidden="true"></div>
-          <p class="script-text">Join Us</p>
-          <h2>TO CELEBRATE THE HERITAGE IN HARMONY</h2>
+          <p class="club-heading">OASIS Toastmasters Club</p>
+          <h2>Heritage in Harmony</h2>
           <p class="invitee-card">Cordially Inviting <span id="cardInvitee">Guest</span>,</p>
-          <p class="scroll-hint">Scroll down for details and RSVP</p>
           <p class="names" id="eventName">Sachithra's Party</p>
+
+          <p class="message" id="eventMessage">
+            We would be privileged to have you with us as we celebrate this memorable occasion.
+          </p>
 
           <div class="details">
             <p><span>Date</span> <span id="eventDate">Saturday, 25 July 2026</span></p>
@@ -58,14 +66,14 @@
             </p>
           </div>
 
-          <p class="message" id="eventMessage">
-            Your presence will make the evening brighter. Come ready for food,
-            music, laughter, and memories.
-          </p>
-
           <div class="rsvp-actions" aria-label="RSVP response">
             <button class="rsvp-button accept" type="button" id="acceptInvitation">Accept</button>
             <button class="rsvp-button decline" type="button" id="declineInvitation">Decline</button>
+          </div>
+
+          <div class="rsvp-contacts" aria-label="RSVP contact numbers">
+            <p><span>Sachithra</span> <a href="tel:+94702700269">070 270 0269</a></p>
+            <p><span>Chamodith</span> <a href="tel:+94711195946">071 119 5946</a></p>
           </div>
 
           <button class="close-button" type="button" id="closeInvitation">Close card</button>
