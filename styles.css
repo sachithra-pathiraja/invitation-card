@@ -490,8 +490,7 @@ h2 {
   border: 1px solid rgba(230, 201, 128, 0.64);
   border-radius: 8px;
   color: var(--cream);
-  background: rgba(23, 33, 58, 0.68);
-  backdrop-filter: blur(8px);
+  background: rgba(18, 24, 40, 0.78);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
 }
 
@@ -547,8 +546,7 @@ h2 {
   border-radius: 8px;
   padding: 6px 8px;
   color: var(--cream);
-  background: rgba(23, 33, 58, 0.58);
-  backdrop-filter: blur(8px);
+  background: rgba(18, 24, 40, 0.74);
 }
 
 .rsvp-contacts span {
