@@ -12,6 +12,7 @@ const contentTypes = {
   ".js": "text/javascript; charset=utf-8",
   ".properties": "text/plain; charset=utf-8",
   ".avif": "image/avif",
+  ".png": "image/png",
 };
 
 function isSafePath(filePath) {

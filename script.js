@@ -14,12 +14,12 @@ const declineInvitation = document.getElementById("declineInvitation");
 
 const defaultSettings = {
   defaultInvitee: "Guest",
-  eventName: "Sachithra's Party",
-  eventDate: "Saturday, 25 July 2026",
-  eventTime: "6:30 PM onwards",
+  eventName: "17th Installation - OASIS Toastmasters",
+  eventDate: "Sunday, 9 August 2026",
+  eventTime: "9:00 AM onwards",
   venueName: "Hotel Chance Palace, Kottala, Veyangoda",
   venueUrl: "https://www.google.com/maps/dir//Hotel+Chance+Palace,+Mallehewa+Road,+Kottala,+Veyangoda+11100/@7.1265399,80.1093562,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ae2e2b8cd5af693:0x8a8b38f9c364f54a!2m2!1d80.0771449!2d7.1732257?ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D",
-  message: "Your presence will make the evening brighter. Come ready for food, music, laughter, and memories.",
+  message: "We would be privileged to have you with us as we celebrate this memorable occasion.",
   rsvpEmail: "sachithra29@gmail.com",
 };
 
@@ -73,9 +73,9 @@ function formatInviteeName(value) {
 function getInviteeFromUrl() {
   const queryName = new URLSearchParams(window.location.search).get("name");
 
-if (queryName) {
-  return formatInviteeName(decodeURIComponent(queryName));
-}
+  if (queryName) {
+    return formatInviteeName(decodeURIComponent(queryName));
+  }
 
   const hashParts = window.location.hash.replace(/^#\/?/, "").split("/");
   const hashName = hashParts[0] === "invitation" ? hashParts[1] : hashParts[0];
