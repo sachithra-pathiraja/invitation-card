@@ -11,7 +11,7 @@
   --muted: #695e58;
   --line: rgba(51, 9, 20, 0.16);
   --panel-background:
-    linear-gradient(145deg, rgba(122, 23, 49, 0.78), rgba(51, 9, 20, 0.72)),
+    linear-gradient(145deg, rgba(75, 11, 27, 0.84), rgba(51, 9, 20, 0.8)),
     url("3834c719-4f82-44f6-bcdc-c40283b07dcd.png");
   --shadow: 0 28px 80px rgba(35, 28, 31, 0.24);
 }
@@ -615,38 +615,40 @@ h2 {
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  border: 0;
+  border: 1px solid rgba(230, 201, 128, 0.5);
   border-radius: 999px;
   padding: 0 20px;
   color: white;
   font: inherit;
   font-weight: 700;
   text-decoration: none;
-  background: var(--maroon);
+  background: var(--panel-background);
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
 }
 
 .rsvp-button.accept:hover,
 .close-button:hover {
-  background: var(--maroon-dark);
+  filter: brightness(0.86);
 }
 
 .rsvp-button.decline {
-  border: 1px solid rgba(122, 23, 49, 0.3);
-  color: var(--maroon);
-  background: rgba(255, 248, 234, 0.72);
+  color: var(--cream);
+  background: var(--panel-background);
+  background-position: center;
+  background-size: cover;
 }
 
 .rsvp-button.decline:hover {
   color: var(--cream);
-  background: var(--maroon-dark);
+  filter: brightness(0.86);
 }
 
 .close-button {
   min-height: 40px;
   padding-inline: 18px;
   font-size: 0.9rem;
-  background: var(--navy);
 }
 
 .ornament {
