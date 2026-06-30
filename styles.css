@@ -503,6 +503,10 @@ h2 {
   color: var(--cream);
 }
 
+.details p > * {
+  min-width: 0;
+}
+
 .details p:last-child {
   border-bottom: 0;
 }
@@ -515,16 +519,20 @@ h2 {
   text-transform: uppercase;
 }
 
-.details p > span:last-child {
+.details p > span:last-child,
+.details p > a:last-child {
   color: var(--cream);
   font-size: 0.8rem;
   font-weight: 700;
 }
 
 .map-link {
+  display: block;
   color: var(--cream);
   font-size: 0.8rem;
   font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: break-word;
   text-decoration-color: rgba(230, 201, 128, 0.56);
   text-underline-offset: 3px;
 }
@@ -702,14 +710,14 @@ h2 {
   }
 
   .details p {
-    grid-template-columns: 1fr;
-    gap: 3px;
-    padding: 8px 12px;
-    text-align: center;
+    grid-template-columns: minmax(78px, 0.36fr) minmax(0, 1fr);
+    gap: 8px;
+    padding: 7px 10px;
+    text-align: left;
   }
 
   .details {
-    max-width: 300px;
+    max-width: min(100%, 340px);
   }
 
   .rsvp-contacts {
