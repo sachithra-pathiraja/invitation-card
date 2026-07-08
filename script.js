@@ -15,10 +15,10 @@ const declineInvitation = document.getElementById("declineInvitation");
 
 const defaultSettings = {
   defaultInvitee: "Guest",
-  eventName: "17th Installation - OASIS Toastmasters",
+  eventName: "17th Installation Ceremony",
   eventDate: "Sunday, 9 August 2026",
   eventTime: "9:00 AM onwards",
-  dressCode: "Formal Attire | Maroon or Beige",
+  dressCode: "Formal Attire | Maroon and Beige",
   venueName: "Hotel Chance Palace, Kottala, Veyangoda",
   venueUrl: "https://www.google.com/maps/dir//Hotel+Chance+Palace,+Mallehewa+Road,+Kottala,+Veyangoda+11100/@7.1265399,80.1093562,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ae2e2b8cd5af693:0x8a8b38f9c364f54a!2m2!1d80.0771449!2d7.1732257?ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D",
   message: "We would be privileged to have you with us as we celebrate this memorable occasion.",
