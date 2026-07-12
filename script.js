@@ -102,13 +102,28 @@ function getInvitationHash() {
   return `#invitation/${encodedName}`;
 }
 
+function setEventName(value) {
+  const ordinalMatch = value.match(/^(\d+)(st|nd|rd|th)\b/i);
+
+  if (!ordinalMatch) {
+    eventName.textContent = value;
+    return;
+  }
+
+  eventName.replaceChildren(
+    document.createTextNode(ordinalMatch[1]),
+    Object.assign(document.createElement("sup"), { textContent: ordinalMatch[2] }),
+    document.createTextNode(value.slice(ordinalMatch[0].length)),
+  );
+}
+
 function applySettings(settings) {
   activeSettings = settings;
   inviteeName = getInviteeFromUrl() || settings.defaultInvitee;
 
   welcomeInvitee.textContent = inviteeName;
   cardInvitee.textContent = inviteeName;
-  eventName.textContent = settings.eventName;
+  setEventName(settings.eventName);
   eventDate.textContent = settings.eventDate;
   eventTime.textContent = settings.eventTime;
   eventDressCode.textContent = settings.dressCode;
