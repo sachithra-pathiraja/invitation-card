@@ -189,6 +189,11 @@ h1 {
   line-height: 0.9;
 }
 
+.legacy-year sup {
+  font-size: 0.42em;
+  vertical-align: super;
+}
+
 .legacy-title {
   position: relative;
   z-index: 1;
@@ -204,13 +209,30 @@ h1 {
 .legacy-club {
   position: relative;
   z-index: 1;
+  display: grid;
+  justify-items: center;
   margin-top: 3px;
-  color: var(--champagne);
-  font-size: 0.62rem;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.legacy-club-oasis,
+.legacy-club-name {
+  white-space: nowrap;
+}
+
+.legacy-club-oasis {
+  color: var(--champagne);
+  font-size: clamp(1.35rem, 4.5vw, 2.1rem);
+  letter-spacing: 0.12em;
+  line-height: 1.05;
+}
+
+.legacy-club-name {
+  color: var(--cream);
+  font-size: clamp(0.62rem, 2vw, 0.9rem);
   letter-spacing: 0.09em;
   line-height: 1.45;
-  text-transform: uppercase;
 }
 
 .legacy-lines {
@@ -481,6 +503,11 @@ h2 {
   color: var(--champagne);
   font-size: 1rem;
   font-weight: 700;
+}
+
+.names sup {
+  font-size: 0.6em;
+  vertical-align: super;
 }
 
 .invitee-card {
